@@ -1,6 +1,12 @@
 # 🚖 when-riders-meet-drivers
-Ride-hailing seasonality of supply vs seasonality of demand.
+Seasonality of supply vs seasonality of demand in ride-hailing.
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- Illustration -->
+![ride-hailing-1](https://user-images.githubusercontent.com/58894233/232349913-2782cbc6-2e31-4219-8e97-61abd0ce4bf0.png)
+
 ___
+
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Intro -->
@@ -14,6 +20,9 @@ Since ride-hailing is a business run by private companies that keep such data co
 
 Tags: `product-analytics`, `sql`, `bigquery`.
 
-#
+<!--  # -->
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+___
+
