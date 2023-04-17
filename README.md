@@ -11,7 +11,9 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Intro -->
 
-This repository is part of a study in understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. Specifically, the search is for insight into the following questions:
+This repository is part of a study in understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+
+Specifically, the search is for insight into the following questions:
 
 > <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
 > <i> « If so, when do the most critical imbalances occur? » </i> 
