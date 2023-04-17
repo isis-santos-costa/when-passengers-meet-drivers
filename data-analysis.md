@@ -12,11 +12,11 @@ ___
 
 ## Contents  
 
-[Step 1 • Business Question](data-analysis.md/main#step-1--business-question)  
-[Step 2 • Data Collection](data-analysis.md/main#step-2--data-collection)  
-[Step 3 • Data Cleaning](data-analysis.md/main#step-3--data-cleaning)  
-[Step 4 • Analysis](data-analysis.md/main#step-4--analysis)  
-[Step 5 • Synthesis ](data-analysis.md/main#step-5--synthesis)  
+[Step 1 • Business Question](data-analysis.md#step-1--business-question)  
+[Step 2 • Data Collection](data-analysis.md#step-2--data-collection)  
+[Step 3 • Data Cleaning](data-analysis.md#step-3--data-cleaning)  
+[Step 4 • Analysis](data-analysis.md#step-4--analysis)  
+[Step 5 • Synthesis ](data-analysis.md#step-5--synthesis)  
 
 #
 
