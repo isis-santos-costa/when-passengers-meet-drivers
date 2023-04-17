@@ -34,6 +34,9 @@ The search in this analysis is for a quick insight into the following question:
 > <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
 >> <i> « If so, when do the most critical imbalances occur? » </i>  
 
+[↑](data-analysis.md#contents)
+
+
 #
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
@@ -43,7 +46,9 @@ The search in this analysis is for a quick insight into the following question:
 
 Ideal data for the analysis would be real product data from a ride-hailing app.  
 
-Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics is taken as ann approximation, for which data is available from BigQuery's public datasets.
+Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics is taken as ann approximation, for which data is available from BigQuery's public datasets.  
+
+[↑](data-analysis.md#contents)
 
 #
 
@@ -54,6 +59,8 @@ Since ride-hailing is a business run by private companies that keep such data co
 
 Step 3 • Data Cleaning  
 
+[↑](data-analysis.md#contents)
+
 #
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
@@ -63,6 +70,8 @@ Step 3 • Data Cleaning
 
 Step 4 • Analysis  
 
+[↑](data-analysis.md#contents)
+
 #
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
@@ -70,7 +79,9 @@ Step 4 • Analysis
 
 ## Step 5 • Synthesis  
 
-Step 5 • Synthesis
+Step 5 • Synthesis  
+
+[↑](data-analysis.md#contents)
 
 #
 
