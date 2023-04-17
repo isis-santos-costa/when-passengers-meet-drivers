@@ -1,5 +1,5 @@
 <div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">🚖 when-riders-meet-drivers</h1></summary></ul></div>
-Seasonality of supply vs seasonality of demand in ride-hailing.
+<b>Seasonality of supply vs seasonality of demand in the ride-hailing business.  </b>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
@@ -23,6 +23,16 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 <!--  # -->
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+___
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- Data Analysis Process -->
+
+<div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data Analysis Process</h2></summary></ul></div>
+
+The step-by-step process of data analysis, from *business question* to *synthesis of findings*, is presented [here](data-analysis.md).  
+The `sql` code is available [here](when-riders-meet-drivers.sql).  
 
 ___
 
