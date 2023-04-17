@@ -34,8 +34,15 @@ The search in this analysis is for a quick insight into the following question:
 > <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
 >> <i> « If so, when do the most critical imbalances occur? » </i>  
 
-[↑](data-analysis.md#contents)
+Why would the company care about this issue?  
 
+The duty of a markteplace is to make supply meet demand and vice versa. In some cases, « when » it happens may be secondary. Take, for example, the purchase of a totally specific item found only abroad. In the absence of another option, the customer may be willing to wait a long time (I myself have once waited months). In some cases, on the other hand, timimg may be non-negotiable. Imagine waiting for a car to go to work, for instance. Five minutes most probably make a difference, and anything over fifteen minutes has a high chance of entering the deal-breaker zone.  
+
+This is where seasonality plays a role in the ride-hailing business. In order to make customers happy, it is not enough, in this case, to acquire a sufficient global number of drivers to meet passangers' requests, and to acquire a sufficient number of passangers to guarantee the drivers' income: one side's availability has to take place at the same time as the need for the other side (± no more than a few minutes).
+
+Becoming data-informed about each side's natural preferences equips the business to intentionally, thoughtfully, introduce incentives and create advantages so that one side is attracted to the organic schedule of the other side.
+
+[↑](data-analysis.md#contents)
 
 #
 
