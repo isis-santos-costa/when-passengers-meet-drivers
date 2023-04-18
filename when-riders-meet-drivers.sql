@@ -1,5 +1,5 @@
 -- ****************************************************************************************************************************
--- when_riders_meet_drivers.sql
+-- when_riders_meet_drivers.sql 
 -- Purpose: understand ride-hailing seasonality of supply vs seasonality of demand, in hours, for each day of the week
 -- Approach: using "Chicago Taxi Trips" from BiqQuery Public Data, assuming it shows a behavior similar to ride-hailing
 -- Dialect: BigQuery
