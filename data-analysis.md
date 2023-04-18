@@ -116,6 +116,12 @@ Inspecting the `taxi_trips` table schema reeaveals that the fields needed for a 
 
 Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.  
 
+<br>
+
+Data is retrived from BigQuery public data in the first Common Table Expression (CTE) of the query, as follows:  
+
+<br>
+
 ### CTE 1 • Data collection: fetching data from the original table
 
 ```sql
@@ -124,10 +130,10 @@ Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.clou
 --------------------------------------------------------------------------------------------------------------------------
 WITH raw_data AS (
   SELECT
-    unique_key	            -- REQUIRED	STRING	    Unique identifier for the trip.
-    , taxi_id	              -- REQUIRED	STRING	    A unique identifier for the taxi.
-    , trip_start_timestamp  -- NULLABLE	TIMESTAMP   When the trip started, rounded to nearest 15 minutes.
-    , trip_seconds	        -- NULLABLE	INTEGER	    Duration of the trip in seconds.
+    unique_key               -- REQUIRED  STRING      Unique identifier for the trip.
+    , taxi_id                -- REQUIRED  STRING      A unique identifier for the taxi.
+    , trip_start_timestamp   -- NULLABLE  TIMESTAMP   When the trip started, rounded to nearest 15 minutes.
+    , trip_seconds           -- NULLABLE  INTEGER     Duration of the trip in seconds.
   FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips`
   WHERE trip_seconds > 0
 )
