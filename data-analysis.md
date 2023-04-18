@@ -125,9 +125,9 @@ Data is retrived from BigQuery public data in the first Common Table Expression 
 ### CTE 1 • Data collection: fetching data from the original table
 
 ```sql
---------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 -- CTE 1 • Data collection: fetching data from the original table
---------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 WITH raw_data AS (
   SELECT
     unique_key               -- REQUIRED  STRING      Unique identifier for the trip.
@@ -137,7 +137,7 @@ WITH raw_data AS (
   FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips`
   WHERE trip_seconds > 0
 )
-```
+```  
 
 The other CTEs are gradually introduced below, in their respective step, and the full `sql` code is available [here](when-riders-meet-drivers.sql).  
 
@@ -150,7 +150,219 @@ The other CTEs are gradually introduced below, in their respective step, and the
 
 ## Step 3 • Data Cleaning  
 
-(very soon! anticipated for 2023-04-18)  
+Data cleaning is performed in CTE-2 to CTE-9, comprising the following tasks:  
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (i) &nbsp;&nbsp;&nbsp; Convert from UTC to local (Chicago) Time  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) &nbsp;&nbsp; Exclude outliers: duration (trip_seconds)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iii) &nbsp; Exclude outliers: hours with extreme loads/scarcity of supply or demand  
+
+<br>
+
+### CTE 2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_trip_seconds_iqr AS (
+  SELECT
+      APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] AS trip_seconds_iqr_lower
+    , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(2)] AS trip_seconds_med
+    , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] AS trip_seconds_iqr_upper
+    , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] AS trip_seconds_iqr
+    FROM raw_data
+)
+```  
+
+<br>
+
+### CTE 3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaned_from_duration_outliers AS (
+    SELECT
+    unique_key
+    , taxi_id
+    , DATETIME(trip_start_timestamp, 'America/Chicago') AS trip_start_local_datetime
+    , trip_seconds
+  FROM raw_data, data_cleaning_trip_seconds_iqr
+  WHERE (trip_seconds BETWEEN trip_seconds_iqr_lower - 1.5 * trip_seconds_iqr
+                          AND trip_seconds_iqr_upper + 1.5 * trip_seconds_iqr)
+)
+```  
+
+<br>
+
+### CTE 4 • Data cleaning: checking results from cleaning (i) + (ii)
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 4 • Data cleaning: checking results from cleaning (i) + (ii)
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_duration_outliers_results AS (
+  SELECT
+  'raw_data' AS cte
+  , COUNT(*) record_cnt
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(2)] med_trip_seconds
+  , AVG(trip_seconds) avg_trip_seconds
+  , MIN(trip_seconds) min_trip_seconds
+  , MAX(trip_seconds) max_trip_seconds 
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] q1_trip_seconds
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] q3_trip_seconds
+  , ( APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] ) iqr_trip_seconds
+  FROM raw_data
+  UNION ALL
+  SELECT
+  'data_cleaned_from_duration_outliers' AS cte
+  , COUNT(*) record_cnt
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(2)] med_trip_seconds
+  , AVG(trip_seconds) avg_trip_seconds
+  , MIN(trip_seconds) min_trip_seconds
+  , MAX(trip_seconds) max_trip_seconds 
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] q1_trip_seconds
+  , APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] q3_trip_seconds
+  , ( APPROX_QUANTILES(trip_seconds, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] ) iqr_trip_seconds
+  FROM data_cleaned_from_duration_outliers
+)
+```  
+
+<br>
+
+### CTE 5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_agg AS (
+  SELECT
+      DATETIME_TRUNC(trip_start_local_datetime, HOUR) AS trip_start_local_datehour
+    , COUNT(DISTINCT unique_key) AS trip_cnt
+    , COUNT(DISTINCT taxi_id) AS taxi_cnt
+    FROM data_cleaned_from_duration_outliers
+    GROUP BY trip_start_local_datehour
+)
+```  
+
+<br>
+
+### CTE 6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_trips_taxis_iqr AS (
+  SELECT
+      APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] AS trip_cnt_iqr_lower
+    , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(2)] AS trip_cnt_med
+    , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] AS trip_cnt_iqr_upper
+    , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] AS trip_cnt_iqr
+    , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] AS taxi_cnt_iqr_lower
+    , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(2)] AS taxi_cnt_med
+    , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] AS taxi_cnt_iqr_upper
+    , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] AS taxi_cnt_iqr
+    FROM data_cleaning_agg
+)
+```  
+
+<br>
+
+### CTE 7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data
+-------------------------------------------------------------------------------------------------------------------------------
+, clean_data AS (
+    SELECT
+    trip_start_local_datetime
+    , unique_key
+    , taxi_id
+    , trip_seconds
+  FROM data_cleaned_from_duration_outliers, data_cleaning_trips_taxis_iqr
+  JOIN data_cleaning_agg
+    ON data_cleaning_agg.trip_start_local_datehour = DATETIME_TRUNC(trip_start_local_datetime, HOUR)
+  WHERE (trip_cnt BETWEEN trip_cnt_iqr_lower - 1.5 * trip_cnt_iqr
+                      AND trip_cnt_iqr_upper + 1.5 * trip_cnt_iqr)
+    AND (taxi_cnt BETWEEN taxi_cnt_iqr_lower - 1.5 * taxi_cnt_iqr
+                      AND taxi_cnt_iqr_upper + 1.5 * taxi_cnt_iqr)
+)
+```  
+
+<br>
+
+### CTE 8 • Data cleaning: (c) aggregating final clean data
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 8 • Data cleaning: (c) aggregating final clean data
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_agg_clean_data AS (
+  SELECT
+      DATETIME_TRUNC(trip_start_local_datetime, HOUR) AS trip_start_local_datehour
+    , COUNT(DISTINCT unique_key) AS trip_cnt
+    , COUNT(DISTINCT taxi_id) AS taxi_cnt
+    FROM clean_data
+    GROUP BY trip_start_local_datehour
+)
+```  
+
+<br>
+
+### CTE 9 • Data cleaning: checking results from cleaning (iii)
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 9 • Data cleaning: checking results from cleaning (iii)
+-------------------------------------------------------------------------------------------------------------------------------
+, data_cleaning_results AS (
+  SELECT
+  'data_cleaning_agg' AS cte
+  , COUNT(*) record_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(2)] med_trip_cnt
+  , AVG(trip_cnt) avg_trip_cnt
+  , MIN(trip_cnt) min_trip_cnt
+  , MAX(trip_cnt) max_trip_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] q1_trip_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] q3_trip_cnt
+  , ( APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] ) iqr_trip_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(2)] med_taxi_cnt
+  , AVG(taxi_cnt) avg_taxi_cnt
+  , MIN(taxi_cnt) min_taxi_cnt
+  , MAX(taxi_cnt) max_taxi_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] q1_taxi_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] q3_taxi_cnt
+  , ( APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] ) iqr_taxi_cnt
+  FROM data_cleaning_agg
+  UNION ALL
+  SELECT
+  'data_cleaning_agg_clean_data' AS cte
+  , COUNT(*) record_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(2)] med_trip_cnt
+  , AVG(trip_cnt) avg_trip_cnt
+  , MIN(trip_cnt) min_trip_cnt
+  , MAX(trip_cnt) max_trip_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] q1_trip_cnt
+  , APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] q3_trip_cnt
+  , ( APPROX_QUANTILES(trip_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(trip_cnt, 4)[OFFSET(1)] ) iqr_trip_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(2)] med_taxi_cnt
+  , AVG(taxi_cnt) avg_taxi_cnt
+  , MIN(taxi_cnt) min_taxi_cnt
+  , MAX(taxi_cnt) max_taxi_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] q1_taxi_cnt
+  , APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] q3_taxi_cnt
+  , ( APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(3)] - APPROX_QUANTILES(taxi_cnt, 4)[OFFSET(1)] ) iqr_taxi_cnt
+  FROM data_cleaning_agg_clean_data
+)
+```  
+
+<br>
 
 [↑](data-analysis.md#contents)
 
