@@ -3,7 +3,7 @@
 # 🚖 when-riders-meet-drivers  • Data Analysis Process
 <b>Seasonality of supply vs seasonality of demand in ride-hailing.  </b>
 
-This repository details the steps of the process of a quick data analysis with the aim of understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+This repository details the steps of the process of a quick data analysis with the aim of understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The full `sql` code is available [here](when-riders-meet-drivers.sql).  
 
 Tags: `product-analytics`, `sql`, `bigquery`.
 
@@ -18,11 +18,30 @@ ___
 [Step 2 • Data Collection](data-analysis.md#step-2--data-collection)  
 [Step 3 • Data Cleaning](data-analysis.md#step-3--data-cleaning)  
 [Step 4 • Analysis](data-analysis.md#step-4--analysis)  
-[Step 5 • Synthesis ](data-analysis.md#step-5--synthesis)  
+[Step 5 • Synthesis](data-analysis.md#step-5--synthesis)  
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Query Structure -->
+
+## Query Structure  
+
+[CTE 1 • Data collection: fetching data from the original table](data-analysis.md#cte-1--data-collection-fetching-data-from-the-original-table)  
+[CTE 2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds]()  
+[CTE 3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)]()  
+[CTE 4 • Data cleaning: checking results from cleaning (i) + (ii)]()  
+[CTE 5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)]()  
+[CTE 6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt]()  
+[CTE 7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data]()  
+[CTE 8 • Data cleaning: (c) aggregating final clean data]()  
+[CTE 9 • Data cleaning: checking results from cleaning (iii)]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
 
 ___
 
@@ -95,7 +114,26 @@ Inspecting the `taxi_trips` table schema reeaveals that the fields needed for a 
 
 <br>
 
-Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.
+Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.  
+
+### CTE 1 • Data collection: fetching data from the original table
+
+```sql
+--------------------------------------------------------------------------------------------------------------------------
+-- CTE 1 • Data collection: fetching data from the original table
+--------------------------------------------------------------------------------------------------------------------------
+WITH raw_data AS (
+  SELECT
+    unique_key	            -- REQUIRED	STRING	    Unique identifier for the trip.
+    , taxi_id	              -- REQUIRED	STRING	    A unique identifier for the taxi.
+    , trip_start_timestamp  -- NULLABLE	TIMESTAMP   When the trip started, rounded to nearest 15 minutes.
+    , trip_seconds	        -- NULLABLE	INTEGER	    Duration of the trip in seconds.
+  FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips`
+  WHERE trip_seconds > 0
+)
+```
+
+The other CTEs are gradually introduced below, in their respective step, and the full `sql` code is available [here](when-riders-meet-drivers.sql).  
 
 [↑](data-analysis.md#contents)
 
