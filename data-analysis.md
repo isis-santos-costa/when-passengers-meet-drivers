@@ -51,9 +51,49 @@ Becoming data-informed about each side's natural preferences equips the business
 
 ## Step 2 • Data Collection  
 
-Ideal data for the analysis would be real product data from a ride-hailing app.  
+While ideal data for this analysis is actual product data from a ride-hailing app, such data is kept private by companies. The supply-demand dynamics of a city-hall regulated taxi market is therefore taken as an approximation.  
 
-Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics is taken as ann approximation, for which data is available from BigQuery's public datasets.  
+Taxi operations data is available in [BigQuery public datasets](https://console.cloud.google.com/marketplace/browse?filter=solution-type:dataset):
+
+https://user-images.githubusercontent.com/58894233/232629098-d7089ba6-a8bf-4392-809e-8c015bffaad9.mp4
+
+<br>
+
+You will see that searching for « taxi » on Google Cloud Marketplace for datasets returns two entries <sub>(as of 2023-04-17)</sub>:
+* [Chicago Taxi Trips](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips)
+* [NYC TLC Trips](https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-tlc-trips)
+
+<br>
+
+Clicking on « view dataset » opens it on BigQuery, where it is possible to see different structures for the collection of these datasets.  
+
+<br>
+
+The dataset « NYC TLC Trips » has <b>separate tables</b> for each year and line of business:  
+
+![when-riders-meet-drivers---dataset-1-highlighted](https://user-images.githubusercontent.com/58894233/232633376-1507a50a-b41a-4a03-8d81-d940fb843b74.png)
+
+<br>
+
+The dataset « Chicago Taxi Trips », in turn, has the whole data collected in a <b>single table</b>:  
+
+![when-riders-meet-drivers---dataset-2-highlighted](https://user-images.githubusercontent.com/58894233/232633677-31d77026-da42-4e55-9505-c089d8742504.png)
+
+<br>
+
+Inspecting the `taxi_trips` table schema reeaveals that the fields needed for a quick study are available in it:
+* unique_key
+* taxi_id
+* trip_start_timestamp
+* trip_seconds (duration)
+
+<br>
+
+![when-riders-meet-drivers---dataset-3-highlighted](https://user-images.githubusercontent.com/58894233/232634944-c0462a65-fb5e-4dde-b2bd-1cc5a40c8f56.png)
+
+<br>
+
+Considering agility, only the <b>« Chicago Taxi Trips » dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.
 
 [↑](data-analysis.md#contents)
 
@@ -64,7 +104,7 @@ Since ride-hailing is a business run by private companies that keep such data co
 
 ## Step 3 • Data Cleaning  
 
-Step 3 • Data Cleaning  
+(very soon! anticipated for 2023-04-18)  
 
 [↑](data-analysis.md#contents)
 
@@ -75,7 +115,7 @@ Step 3 • Data Cleaning
 
 ## Step 4 • Analysis  
 
-Step 4 • Analysis  
+(very soon! anticipated for 2023-04-18)  
 
 [↑](data-analysis.md#contents)
 
@@ -84,7 +124,7 @@ Step 4 • Analysis
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 5 -->
 
-## Step 5 • Synthesis  
+(very soon! anticipated for 2023-04-18)  
 
 Step 5 • Synthesis  
 
