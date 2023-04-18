@@ -443,6 +443,34 @@ ___
 
 ## Step 4 • Analysis  
 
+In the step of actual analysis, the goal is to generate a list of the hourly levels of supply and demand, with their corresponding time, 
+and then pivot it into days of week by hours of the day, for a final picture of a typical weekly schedule of each side.  
+
+The hourly demand for this list is directly obtained from the clean dataset, 
+by simply summing up the hourly count of the trips' `unique_key`.  
+
+Hourly values for the supply side, on the other hand, have to be estimated. 
+
+With the relevant **Product Data** available, the hourly supply could be defined as `availability_of_drivers_in_minutes` (total sum) 
+multiplied by the `typical_trip_minutes` (duration). As the total time that drivers are in service is not available from our 
+<b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/)</b> 
+dataset, an estimation for it is performed based on the trips taken. 
+
+The supply numbers that can be directly extracted from the dataset are unique taxi counts. Considering that a single taxi may be able to 
+take multiple trips in an hour, a model is applied to estimate how many trips each taxi was expected to be able to perform. Taking into 
+consideration a factor of [2/3](https://www.uberpeople.net/threads/what-is-your-idle-time-and-idle-running-in-km-as-uber-driver.146607/) 
+for the drivers' idle time, an estimated `availability_of_drivers_in_minutes` is obtained directly from trips taken, dividing this number by the 
+`drivers_idle_time`.  
+
+⚠️ It is important to notice, though, that using the number of trips actually performed to estimate supply is expected to **flatten out** 
+the difference between supply and demand that shall, in fact, occur. So, any potential gains found out in this study are expected to be 
+observed at a higher intensity if product data is available foor the analysis. The framework of the analysis is independent of it, and 
+fully applicable in a business scenario.  
+
+CTEs 10 e 11 combined perform the described approach, fetching an hourly list of 89k+ records from Dec 2012 to Apr 2023:
+
+<br>
+
 ### CTE 10 • Data analysis: typical duration of trips, according to clean data
 
 ```sql
@@ -500,7 +528,43 @@ Calling CTE 11:
 ```sql
 SELECT * FROM hourly_supply_demand ORDER BY 1
 ```  
-![when-riders-meet-drivers---sql---cte-8---query-results](https://user-images.githubusercontent.com/58894233/232666971-556439d3-41f5-4209-ae00-c2ee9f92c514.png)
+
+![when-riders-meet-drivers---sql---cte-11a---query-results](https://user-images.githubusercontent.com/58894233/232925819-594d12de-d8ff-438b-bb58-88933e16a2a8.png)  
+
+<br>
+
+The generated list is in a convenient format to be pivoted on a spreadsheet. Making use of the convenient feature of saving directly from the cloud console, the 
+results were exported to Google Sheets:  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---1](https://user-images.githubusercontent.com/58894233/232926033-77ee1e51-f8a7-49c6-befc-ace2a99157cb.png)  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---2](https://user-images.githubusercontent.com/58894233/232926253-f73a9c5d-3427-4397-9010-12e1908df104.png)  
+
+<br>
+
+On Google Sheets, generating a pivot table is a fast way to arrange the data in the wanted format: hours of day x days of week.  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---3](https://user-images.githubusercontent.com/58894233/232926563-8edfd33f-9a35-4f35-93c0-4dad9dbe7154.png)  
+
+<br>
+
+For supply:  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---5-Supply](https://user-images.githubusercontent.com/58894233/232926674-be728343-5210-4986-bcc7-b07a56c1b1db.png)  
+
+<br>
+
+For demand:  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---4-Demand](https://user-images.githubusercontent.com/58894233/232926582-af61a09b-91b5-4a5c-ac37-04019bb91023.png)  
+
+<br>
+
+Bringing supply and demand side-by-side, enables the comparison of the typical schedules of passengers and drivers:  
+
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand](https://user-images.githubusercontent.com/58894233/232926748-4466bbdc-e9c1-4562-be8a-faba6b19c727.png)  
+
+
 
 <br>
 
