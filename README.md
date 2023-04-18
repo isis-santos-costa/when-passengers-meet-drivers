@@ -33,7 +33,7 @@ ___
 
 <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data Analysis Process</h2></summary></ul></div>
 
-The step-by-step process of data analysis, from *business question* to *synthesis of findings*, is presented [here](data-analysis.md).  
+The step-by-step process of data analysis, from *business question* to *synthesis of findings*, is presented **[here](data-analysis.md)**.  
 The `sql` code is available [here](when-riders-meet-drivers.sql).  
 
 ___
