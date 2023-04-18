@@ -102,7 +102,7 @@ The dataset « Chicago Taxi Trips », in turn, has the whole data collected in a
 
 <br>
 
-Inspecting the `taxi_trips` table schema reeaveals that the fields needed for a quick study are available in it:
+Inspecting the `taxi_trips` table schema reaveals that the fields needed for a quick study are available in it:
 * unique_key
 * taxi_id
 * trip_start_timestamp
