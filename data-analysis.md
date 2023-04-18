@@ -93,7 +93,7 @@ Inspecting the `taxi_trips` table schema reeaveals that the fields needed for a 
 
 <br>
 
-Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.
+Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/?target=_blank) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.
 
 [↑](data-analysis.md#contents)
 
