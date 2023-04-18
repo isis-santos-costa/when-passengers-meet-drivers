@@ -124,9 +124,9 @@ Considering agility, only the <b>« Chicago Taxi Trips » dataset has been chose
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 5 -->
 
-(very soon! anticipated for 2023-04-18)  
+## Step 5 • Synthesis  
 
-Step 5 • Synthesis  
+(very soon! anticipated for 2023-04-18)  
 
 [↑](data-analysis.md#contents)
 
