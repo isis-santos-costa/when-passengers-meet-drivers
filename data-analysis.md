@@ -28,16 +28,16 @@ ___
 ## Query Structure  
 
 [CTE &nbsp;&nbsp;1 • Data collection: fetching data from the original table](data-analysis.md#cte-1--data-collection-fetching-data-from-the-original-table)  
-[CTE &nbsp;&nbsp;2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds]()  
-[CTE &nbsp;&nbsp;3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)]()  
-[CTE &nbsp;&nbsp;4 • Data cleaning: checking results from cleaning (i) + (ii)]()  
-[CTE &nbsp;&nbsp;5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)]()  
-[CTE &nbsp;&nbsp;6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt]()  
-[CTE &nbsp;&nbsp;7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data]()  
-[CTE &nbsp;&nbsp;8 • Data cleaning: (c) aggregating final clean data]()  
-[CTE &nbsp;&nbsp;9 • Data cleaning: checking results from cleaning (iii)]()  
-[CTE 10 • Data analysis: typical duration of trips, according to clean data]()  
-[CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)]()  
+[CTE &nbsp;&nbsp;2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds](data-analysis.md#cte-2--data-cleaning-a-finding-interquartile-ranges-iqr-of-trip_seconds)  
+[CTE &nbsp;&nbsp;3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)](data-analysis.md#cte-3--data-cleaning-i-converting-from-utc-to-chicago-time-ii-excluding-outliers-duration-trip_seconds)  
+[CTE &nbsp;&nbsp;4 • Data cleaning: checking results from cleaning (i) + (ii)](data-analysis.md#cte-4--data-cleaning-checking-results-from-cleaning-i--ii)  
+[CTE &nbsp;&nbsp;5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)](data-analysis.md#cte-5--data-cleaning-b-aggregating-partially-clean-data-preparing-to-exclude-extreme-hours-esp-peaks)  
+[CTE &nbsp;&nbsp;6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt](data-analysis.md#cte-6--data-cleaning-c-finding-interquartile-ranges-iqr-of-trip_cnt-taxi_cnt)  
+[CTE &nbsp;&nbsp;7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data](data-analysis.md#cte-7--data-cleaning-iii-based-on-trip_cnt-taxi_cnt-remove-extreme-hours-from-pre-cleaned-iii-data)  
+[CTE &nbsp;&nbsp;8 • Data cleaning: (c) aggregating final clean data](data-analysis.md#cte-8--data-cleaning-c-aggregating-final-clean-data)  
+[CTE &nbsp;&nbsp;9 • Data cleaning: checking results from cleaning (iii)](data-analysis.md#cte-9--data-cleaning-checking-results-from-cleaning-iii)  
+[CTE 10 • Data analysis: typical duration of trips, according to clean data](data-analysis.md#cte-10--data-analysis-typical-duration-of-trips-according-to-clean-data)  
+[CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)](data-analysis.md#cte-11--data-analysis-hourly-count-of-trips-demand--estimated-hourly-count-of-possible-trips-supply)  
 
 ___
 
