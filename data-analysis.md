@@ -65,7 +65,7 @@ Becoming data-informed about each side's natural preferences equips the business
 
 [↑](data-analysis.md#contents)
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 2 -->
@@ -143,7 +143,7 @@ The other CTEs are gradually introduced below, in their respective step, and the
 
 [↑](data-analysis.md#contents)
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 3 -->
@@ -366,7 +366,7 @@ Data cleaning is performed in CTE-2 to CTE-9, comprising the following tasks:
 
 [↑](data-analysis.md#contents)
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 4 -->
@@ -377,7 +377,7 @@ Data cleaning is performed in CTE-2 to CTE-9, comprising the following tasks:
 
 [↑](data-analysis.md#contents)
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 5 -->
@@ -388,9 +388,7 @@ Data cleaning is performed in CTE-2 to CTE-9, comprising the following tasks:
 
 [↑](data-analysis.md#contents)
 
-#
+___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
-
-___
 
