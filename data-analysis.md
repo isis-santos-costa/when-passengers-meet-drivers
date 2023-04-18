@@ -145,9 +145,6 @@ Calling CTE 1:
 ```sql
 SELECT COUNT(*) AS record_cnt FROM raw_data
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-1---query-results](https://user-images.githubusercontent.com/58894233/232664865-1c57e472-21c0-4cae-9e42-a8f8aafb59c5.png)
 
 <br>
@@ -195,9 +192,6 @@ Calling CTE 2:
 ```sql
 SELECT * FROM data_cleaning_trip_seconds_iqr
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-2---query-results](https://user-images.githubusercontent.com/58894233/232666745-fc156780-1e88-4be6-9969-fcb7897f49c8.png)
 
 <br>
@@ -226,9 +220,6 @@ Calling CTE 3:
 ```sql
 SELECT COUNT(*) FROM data_cleaned_from_duration_outliers
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-3---query-results](https://user-images.githubusercontent.com/58894233/232666776-6462df6c-f87f-43fe-a790-bd02d6452127.png)
 
 <br>
@@ -272,9 +263,6 @@ Calling CTE 4:
 ```sql
 SELECT * FROM data_cleaning_duration_outliers_results
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-4---query-results](https://user-images.githubusercontent.com/58894233/232666807-c3693ff2-5ef8-4b08-9c0a-61688af83f1f.png)
 
 <br>
@@ -301,9 +289,6 @@ Calling CTE 5:
 ```sql
 SELECT COUNT(*) FROM data_cleaning_agg
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-5---query-results](https://user-images.githubusercontent.com/58894233/232666839-341cef6f-17ad-4351-bf76-86691456857e.png)
 
 <br>
@@ -334,9 +319,6 @@ Calling CTE 6:
 ```sql
 SELECT * FROM data_cleaning_trips_taxis_iqr
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-6---query-results](https://user-images.githubusercontent.com/58894233/232666871-8241b05b-0cf1-4321-9a4f-320a5949e4e3.png)
 
 <br>
@@ -369,9 +351,6 @@ Calling CTE 7:
 ```sql
 SELECT COUNT(*) FROM clean_data
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-7---query-results](https://user-images.githubusercontent.com/58894233/232666918-cbc199a1-90be-456a-9e67-e6cc2da454ee.png)
 
 <br>
@@ -398,9 +377,6 @@ Calling CTE 8:
 ```sql
 SELECT COUNT(*) FROM data_cleaning_agg_clean_data
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-8---query-results](https://user-images.githubusercontent.com/58894233/232666971-556439d3-41f5-4209-ae00-c2ee9f92c514.png)
 
 <br>
@@ -458,9 +434,6 @@ Calling CTE 9:
 ```sql
 SELECT * FROM data_cleaning_results
 ```  
-<br>
-Query results:  <br><br>  
-
 ![when-riders-meet-drivers---sql---cte-9---query-results](https://user-images.githubusercontent.com/58894233/232667001-6a29f4d0-f363-4b6f-beb8-be1450ecd718.png)
 
 <br>
