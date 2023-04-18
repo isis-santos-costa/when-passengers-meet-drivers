@@ -560,7 +560,7 @@ For demand:
 
 <br>
 
-Bringing supply and demand side-by-side, enables the comparison of the typical schedules of passengers and drivers:  
+Showing the tables for supply and demand side-by-side enables the comparison of the typical schedules of passengers and drivers:  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand](https://user-images.githubusercontent.com/58894233/232926748-4466bbdc-e9c1-4562-be8a-faba6b19c727.png)  
 
