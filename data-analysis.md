@@ -27,21 +27,17 @@ ___
 
 ## Query Structure  
 
-[CTE 1 • Data collection: fetching data from the original table](data-analysis.md#cte-1--data-collection-fetching-data-from-the-original-table)  
-[CTE 2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds]()  
-[CTE 3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)]()  
-[CTE 4 • Data cleaning: checking results from cleaning (i) + (ii)]()  
-[CTE 5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)]()  
-[CTE 6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt]()  
-[CTE 7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data]()  
-[CTE 8 • Data cleaning: (c) aggregating final clean data]()  
-[CTE 9 • Data cleaning: checking results from cleaning (iii)]()  
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
+[CTE &nbsp;&nbsp;1 • Data collection: fetching data from the original table](data-analysis.md#cte-1--data-collection-fetching-data-from-the-original-table)  
+[CTE &nbsp;&nbsp;2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds]()  
+[CTE &nbsp;&nbsp;3 • Data cleaning: (i) converting from UTC to Chicago Time, (ii) Excluding outliers: duration (trip_seconds)]()  
+[CTE &nbsp;&nbsp;4 • Data cleaning: checking results from cleaning (i) + (ii)]()  
+[CTE &nbsp;&nbsp;5 • Data cleaning: (b) aggregating partially clean data, preparing to exclude extreme hours (esp. peaks)]()  
+[CTE &nbsp;&nbsp;6 • Data cleaning: (c) finding interquartile ranges (IQR) of trip_cnt, taxi_cnt]()  
+[CTE &nbsp;&nbsp;7 • Data cleaning: (iii) based on trip_cnt, taxi_cnt, remove extreme hours from pre-cleaned (i)+(ii) data]()  
+[CTE &nbsp;&nbsp;8 • Data cleaning: (c) aggregating final clean data]()  
+[CTE &nbsp;&nbsp;9 • Data cleaning: checking results from cleaning (iii)]()  
+[CTE 10 • Data analysis: typical duration of trips, according to clean data]()  
+[CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)]()  
 
 ___
 
@@ -447,7 +443,66 @@ ___
 
 ## Step 4 • Analysis  
 
-(very soon! anticipated for 2023-04-18)  
+### CTE 10 • Data analysis: typical duration of trips, according to clean data
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 10 • Data analysis: typical duration of trips, according to clean data
+-------------------------------------------------------------------------------------------------------------------------------
+, typical_trip_seconds AS 
+  (SELECT APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] AS median_trip_seconds FROM clean_data)
+)
+```  
+
+<br>
+
+### CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)
+
+```sql
+-------------------------------------------------------------------------------------------------------------------------------
+-- CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)
+-------------------------------------------------------------------------------------------------------------------------------
+-- Model
+-- hourly_trips_supply: total #trips in 1hr that could have happened, based on drivers' availability and typical trip duration
+-- hourly_trips_supply =
+--   = estimated_number_of_taxis_available_in_the_hour × potential_number_of_trips_per_hour_per_driver
+--
+-- estimated_number_of_taxis_available_in_the_hour = 
+--   = number_of_taxis_w_trips_in_the_hour ÷ drivers_typical_idle_time
+-- 
+-- potential_number_of_trips_per_hour_per_driver =
+--   = 60 ÷ typical_trip_minutes
+-------------------------------------------------------------------------------------------------------------------------------
+-- Assumption
+-- drivers_idle_time = 2/3
+-- Ref.: https://www.uberpeople.net/threads/what-is-your-idle-time-and-idle-running-in-km-as-uber-driver.146607/
+-------------------------------------------------------------------------------------------------------------------------------
+-- Note on impact of Model & Assumption on findings
+-- These are only applied in getting realistic absolute numbers, not impacting findings of the analysis [based on proportion]
+-------------------------------------------------------------------------------------------------------------------------------
+, hourly_supply_demand AS (
+  SELECT
+      DATETIME_TRUNC(trip_start_local_datetime, HOUR) AS trip_start_local_datehour
+    , dayOfWeek(trip_start_local_datetime) AS trip_start_local_dayofweek
+    , EXTRACT(HOUR FROM trip_start_local_datetime) AS trip_start_local_hour
+    , (median_trip_seconds / 60.0) AS typical_trip_minutes
+    , CAST(FLOOR(60 / (median_trip_seconds / 60.0)) AS INT64) AS potential_number_of_trips_per_hour_per_driver
+    , COUNT(DISTINCT unique_key) AS hourly_trips_demand
+    , CAST(FLOOR((COUNT(DISTINCT taxi_id)/(2/3)) * FLOOR(60/(AVG(median_trip_seconds)/60.0))) AS INT64) AS hourly_trips_supply
+  FROM clean_data, typical_trip_seconds
+  GROUP BY 1, 2, 3, 4, 5
+)
+```  
+
+<br>
+
+Calling CTE 11:  
+```sql
+SELECT * FROM hourly_supply_demand ORDER BY 1
+```  
+![when-riders-meet-drivers---sql---cte-8---query-results](https://user-images.githubusercontent.com/58894233/232666971-556439d3-41f5-4209-ae00-c2ee9f92c514.png)
+
+<br>
 
 [↑](data-analysis.md#contents)
 
