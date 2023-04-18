@@ -18,7 +18,7 @@ Specifically, the search is for insight into the following questions:
 > <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
 > <i> « If so, when do the most critical imbalances occur? » </i> 
 
-Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics is taken as ann approximation, for which data is available from BigQuery's public datasets.
+Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available in Google BigQuery public datasets.
 
 Tags: `product-analytics`, `sql`, `bigquery`.
 
