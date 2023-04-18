@@ -1,5 +1,5 @@
 -- ****************************************************************************************************************************
--- when_riders_meet_drivers.sql 
+-- when_riders_meet_drivers.sql
 -- Purpose: understand ride-hailing seasonality of supply vs seasonality of demand, in hours, for each day of the week
 -- Approach: using "Chicago Taxi Trips" from BiqQuery Public Data, assuming it shows a behavior similar to ride-hailing
 -- Dialect: BigQuery
@@ -184,13 +184,13 @@ WITH raw_data AS (
 )
 
 -------------------------------------------------------------------------------------------------------------------------------
--- CTE 10 • Typical duration of trips, according to clean data
+-- CTE 10 • Data analysis: typical duration of trips, according to clean data
 -------------------------------------------------------------------------------------------------------------------------------
 , typical_trip_seconds AS 
   (SELECT APPROX_QUANTILES(trip_seconds, 4)[OFFSET(1)] AS median_trip_seconds FROM clean_data)
 
 -------------------------------------------------------------------------------------------------------------------------------
--- CTE 11 • Hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)
+-- CTE 11 • Data analysis: hourly count of trips (demand) + (estimated) Hourly count of possible trips (supply)
 -------------------------------------------------------------------------------------------------------------------------------
 -- Model
 -- hourly_trips_supply: total #trips in 1hr that could have happened, based on drivers' availability and typical trip duration
