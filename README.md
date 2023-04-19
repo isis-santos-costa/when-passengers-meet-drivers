@@ -14,7 +14,7 @@
 **What does a marketplace do?**  
 A marketplace dedicates to making supply meet demand. Depending on the market that it serves, some requirements may be present, with lesser or greater importance, such as safety, timeliness, accuracy, quality.  
 
-This repository is part of a study on **ride-hailing** marketplaces. In this business field, **timeliness** is key. Focusing on this issue, **a framework is presented here**, designed to bring an understanding of the points of correspondence and contrast in the daily and weekly schedules of the different sides of a ride-hailing app.  
+This repository is part of a study on **ride-hailing** marketplaces. In this business field, **timeliness** is key. Focusing on the issue, **a framework is presented here**, designed to bring an understanding of the points of correspondence and contrast in the daily and weekly schedules of the different sides of a ride-hailing app.  
 
 Specifically, the search is for insights on the following questions:  
 
