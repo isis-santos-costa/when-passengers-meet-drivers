@@ -583,7 +583,9 @@ ___
 
 ## Step 5 • Synthesis  
 
-(very soon! anticipated for 2023-04-18)  
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
+
+<br>
 
 [↑](data-analysis.md#contents)
 
