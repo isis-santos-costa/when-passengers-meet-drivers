@@ -583,6 +583,16 @@ ___
 
 ## Step 5 • Synthesis  
 
+Being in charge of the **operation of a marketplace** is a challenging task, loaded with **even greater levels of uncertainty** than those natural to any business, as, in this case, in addition to the lack of control over the demand side, there is also no control over the supply side.  
+
+The study presented in this repository introduces a **framework** for applying the concept of **seasonality** in navigating and managing such unusual levels of uncertainty. Seasonality arises when repeated events occur following a defined temporal pattern, with a fixed frequency, drawing foreseeable cycles and, thus, **introducing predictability** into a system.  
+
+By carrying out seasonality studies, we can separate into conceptual 'buckets' of knowledge what we can anticipate about a system from its erractic part. When it comes to **consumer markets**, seasonality includes some pretty **robust** and consistently **stable patterns of behavior**, especially those related to nature's cycles. For thousands of years, we humankind have been mostly active during the day, resting during the night.
+
+This **stability** in end-user seasonal patterns comes in handy for **Strategy** teams in the quest to design (digital) products and services to improve lives.  
+
+The picture below illustrates the application of seasonality studies in the ride-hailing business. By visualizing passagers' weekly/daily organic schedule and how it differs from drivers', the strategist is informed by data to intentionally design it.
+
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
 
 <br>
