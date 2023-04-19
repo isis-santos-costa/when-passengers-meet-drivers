@@ -11,14 +11,17 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Intro -->
 
-This repository is part of a study in understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+What does a marketplace do?  
+A marketplace dedicates to making supply meet demand. Depending on the market that it serves, some requirements may be present, with lesser or greater importance, such as safety, timeliness, accuracy, quality.  
 
-Specifically, the search is for insight into the following questions:
+This repository is part of a study on ride-hailing marketplaces. In this business field, timeliness is key. Focusing on this issue, a framework is presented here, designed to bring an understanding of the points of correspondence and contrast in the daily and weekly schedules of the different sides of a ride-hailing app.  
 
-> <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
-> <i> « If so, when do the most critical imbalances occur? » </i> 
+Specifically, the search is for insights on the following questions:  
 
-Since ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available in Google BigQuery public datasets.
+> <i> « Are there any significant differences between preferred drivers' schedules and passengers' needs? » </i>  
+> <i> « If so, when do the most critical disparities occur? » </i> 
+
+Given that ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available from Google BigQuery public datasets.
 
 Tags: `product-analytics`, `sql`, `bigquery`.
 
