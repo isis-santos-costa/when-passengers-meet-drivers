@@ -564,6 +564,13 @@ Showing the tables for supply and demand side-by-side enables the comparison of 
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-1](https://user-images.githubusercontent.com/58894233/232929528-e36d5fa1-0f3e-415d-9df3-c8245c9f2bb9.png)
 
+<br>
+
+⚠️ As mentioned above, the difference between the organic schedules of supply and demand have been toneddown here by the fact that demand has been included in the eestimation of demand. It is though possible, from the chosen data and the designed framework, to detect opportunities of increasing the synchonicity between schedules of the different sides of the marketplace.  
+
+The darker red area close to the right bottom of the demand side indicates a possible trend of passengers' behavior on weekend nights not being organically met by the supply side.  
+
+Similarly, an added availability of drivers in the early mornings of week days is found to have no correspondent proportional increase from the demand side.  
 
 <br>
 
