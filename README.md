@@ -11,10 +11,10 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Intro -->
 
-What does a marketplace do?  
+**What does a marketplace do?**  
 A marketplace dedicates to making supply meet demand. Depending on the market that it serves, some requirements may be present, with lesser or greater importance, such as safety, timeliness, accuracy, quality.  
 
-This repository is part of a study on ride-hailing marketplaces. In this business field, timeliness is key. Focusing on this issue, a framework is presented here, designed to bring an understanding of the points of correspondence and contrast in the daily and weekly schedules of the different sides of a ride-hailing app.  
+This repository is part of a study on **ride-hailing** marketplaces. In this business field, **timeliness** is key. Focusing on this issue, **a framework is presented here**, designed to bring an understanding of the points of correspondence and contrast in the daily and weekly schedules of the different sides of a ride-hailing app.  
 
 Specifically, the search is for insights on the following questions:  
 
@@ -36,8 +36,8 @@ ___
 
 <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data Analysis Process</h2></summary></ul></div>
 
-The step-by-step process of data analysis, from *business question* to *synthesis of the study*, is presented **[here](data-analysis.md)**.  
-The `sql` code is available [here](when-riders-meet-drivers.sql).  
+The step-by-step process of data analysis, from the *business question*, through adopted *assumptions*, to the *synthesis of the study* is presented **[here](data-analysis.md)**.  
+The `sql` code run in the study is available [here](when-riders-meet-drivers.sql).  
 
 ___
 
