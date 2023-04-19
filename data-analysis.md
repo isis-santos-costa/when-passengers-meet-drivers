@@ -566,7 +566,7 @@ Showing the tables for supply and demand side-by-side enables the comparison of 
 
 <br>
 
-⚠️ As mentioned above, the difference between the organic schedules of supply and demand have been toneddown here by the fact that demand has been included in the eestimation of demand. It is though possible, from the chosen data and the designed framework, to detect opportunities of increasing the synchonicity between schedules of the different sides of the marketplace.  
+⚠️ As mentioned above, the difference between the organic schedules of supply and demand have been toned down here by the fact that demand has been included in the estimation of demand. It is though possible, from the chosen data and the designed framework, to detect opportunities of increasing the synchonicity between schedules of the different sides of the marketplace.  
 
 The darker red area close to the right bottom of the demand side indicates a possible trend of passengers' behavior on weekend nights not being organically met by the supply side.  
 
