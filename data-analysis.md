@@ -589,9 +589,9 @@ The study presented in this repository introduces a **framework** for applying t
 
 By carrying out seasonality studies, we can separate into conceptual 'buckets' of knowledge what we can anticipate about a system from its erractic part. When it comes to **consumer markets**, seasonality includes some pretty **robust** and consistently **stable patterns of behavior**, especially those related to nature's cycles. For thousands of years, we humankind have been mostly active during the day, resting during the night.
 
-This **stability** in end-user seasonal patterns comes in handy for **Strategy** teams in the quest to design (digital) products and services to improve lives.  
+This **stability** in end-user seasonal patterns comes in handy for **Strategy** teams in the quest to design products and services to improve lives.  
 
-The picture below illustrates the application of seasonality studies in the ride-hailing business. By visualizing passagers' weekly/daily organic schedule and how it differs from drivers', the strategist is informed by data to intentionally design it.
+The figure below illustrates the application of seasonality studies to the ride-hailing business (approximate here by the Chicago Taxi market, for which public data is available). On the left, we see the typical weekly schedule of drivers (supply), on the right, the same for passengers (demand). In each image, the numbers on the vertical axis are the hours of the day, with the days of week in the columns. Color coding represents relative intensity, with green for low, white for medium, and red for high. So, the image on the left side, for instance, shows that the peak supply time, when there is the highest number of drivers on the streets, is from 1:00 pm to 2:00 pm on Fridays.  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
 
