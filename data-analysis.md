@@ -462,12 +462,9 @@ consideration a factor of [2/3](https://www.uberpeople.net/threads/what-is-your-
 for the drivers' idle time, an estimated `availability_of_drivers_in_minutes` is obtained directly from trips taken, dividing this number by the 
 `drivers_idle_time`.  
 
-⚠️ It is important to notice, though, that using the number of trips actually performed to estimate supply is expected to **flatten out** 
-the difference between supply and demand that shall, in fact, occur. So, any potential gains found out in this study are expected to be 
-observed at a higher intensity if product data is available foor the analysis. The framework of the analysis is independent of it, and 
-fully applicable in a business scenario.  
+##### ⚠️ It is important to notice, though, that using the number of trips actually performed to estimate supply is expected to **flatten out** the difference between supply and demand that shall, in fact, occur. So, any potential gains found out in this study are expected to be observed at a higher intensity if product data is available foor the analysis. The framework of the analysis is independent of it, and fully applicable in a business scenario.  
 
-CTEs 10 e 11 combined perform the described approach, fetching an hourly list of 89k+ records from Dec 2012 to Apr 2023:
+CTEs 10 e 11 combined perform the described approach, fetching an hourly list of 89k+ records from Dec 2012 to Apr 2023:  
 
 <br>
 
@@ -566,7 +563,7 @@ Showing the tables for supply and demand side-by-side enables the comparison of 
 
 <br>
 
-⚠️ As mentioned above, the difference between the organic schedules of supply and demand have been toned down here by the fact that demand has been included in the estimation of demand. It is though possible, from the chosen data and the designed framework, to detect opportunities of increasing the synchonicity between schedules of the different sides of the marketplace.  
+⚠️ As mentioned [above](data-analysis.md#%EF%B8%8F-it-is-important-to-notice-though-that-using-the-number-of-trips-actually-performed-to-estimate-supply-is-expected-to-flatten-out-the-difference-between-supply-and-demand-that-shall-in-fact-occur-so-any-potential-gains-found-out-in-this-study-are-expected-to-be-observed-at-a-higher-intensity-if-product-data-is-available-foor-the-analysis-the-framework-of-the-analysis-is-independent-of-it-and-fully-applicable-in-a-business-scenario), the difference between the organic schedules of supply and demand have been toned down here by the fact that demand has been included in the estimation of demand. It is though possible, from the chosen data and the designed framework, to detect opportunities of increasing the synchonicity between schedules of the different sides of the marketplace.  
 
 The darker red area close to the right bottom of the demand side indicates a possible trend of passengers' behavior on weekend nights not being organically met by the supply side.  
 
