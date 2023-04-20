@@ -31,7 +31,11 @@ Specifically, the search is for insights on the following questions:
 
 Given that ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available from Google BigQuery public datasets.
 
-Tags: `product-analytics`, `sql`, `bigquery`.
+Tags: `product-analytics`, `sql`, `bigquery`.  
+
+<br>
+
+[↑](README.md#-when-riders-meet-drivers)   
 
 #
 
@@ -44,6 +48,10 @@ Assessing the level of supply-demand synchronicity: a dataviz prototype
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)
 
+<br>
+
+[↑](README.md#-when-riders-meet-drivers)  
+
 #
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -53,6 +61,10 @@ Assessing the level of supply-demand synchronicity: a dataviz prototype
 
 The step-by-step process of the data analysis, from *business question* to *synthesis of the study* is available **[here](data-analysis.md)**.  
 The `sql` code run in the study is available [here](when-riders-meet-drivers.sql).  
+
+<br>
+
+[↑](README.md#-when-riders-meet-drivers)  
 
 ___
 
