@@ -1,9 +1,9 @@
 [![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/pulls?q=is%3Apr)
 [![files](https://img.shields.io/github/directory-file-count/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![lines of code](https://img.shields.io/tokei/lines/github/isis-santos-costa/when-riders-meet-drivers?color=purple)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
-[![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](http://isissantoscosta.com/)
-[![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/)
-[![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](http://isissantoscosta.com/)   
+[![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](https://www.linkedin.com/in/isis-santos-costa/)
+[![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
+[![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
 <div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">🚖 when-riders-meet-drivers</h1></summary></ul></div>
 <b>Seasonality of supply vs seasonality of demand in the ride-hailing business.  </b>
