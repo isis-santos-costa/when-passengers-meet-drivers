@@ -1,4 +1,4 @@
-[![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
+[![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/pulls?q=is%3Apr)
 [![files](https://img.shields.io/github/directory-file-count/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![lines of code](https://img.shields.io/tokei/lines/github/isis-santos-costa/when-riders-meet-drivers?color=purple)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](http://isissantoscosta.com/)
