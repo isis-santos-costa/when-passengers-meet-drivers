@@ -35,7 +35,7 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 <br>
 
-[↑](README.md#-when-riders-meet-drivers)   
+[↑](when-riders-meet-drivers#-when-riders-meet-drivers)   
 
 #
 
@@ -50,7 +50,7 @@ Assessing the level of supply-demand synchronicity: a dataviz prototype
 
 <br>
 
-[↑](README.md#-when-riders-meet-drivers)  
+[↑](when-riders-meet-drivers#-when-riders-meet-drivers)  
 
 #
 
@@ -64,7 +64,7 @@ The `sql` code run in the study is available [here](when-riders-meet-drivers.sql
 
 <br>
 
-[↑](README.md#-when-riders-meet-drivers)  
+[↑](when-riders-meet-drivers#-when-riders-meet-drivers)  
 
 ___
 
