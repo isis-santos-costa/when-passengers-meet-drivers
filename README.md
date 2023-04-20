@@ -1,6 +1,6 @@
-[![lines of code](https://img.shields.io/tokei/lines/github/isis-santos-costa/when-riders-meet-drivers?color=purple)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
-[![files](https://img.shields.io/github/directory-file-count/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
+[![files](https://img.shields.io/github/directory-file-count/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
+[![lines of code](https://img.shields.io/tokei/lines/github/isis-santos-costa/when-riders-meet-drivers?color=purple)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](http://isissantoscosta.com/)
 [![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](http://isissantoscosta.com/)   
