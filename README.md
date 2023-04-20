@@ -7,7 +7,7 @@
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
 <div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">🚖 when-riders-meet-drivers</h1></summary></ul></div>
-<b>Taking a (data) look to sync supply with demand in the ride-hailing business.  </b>
+<b>📌 Taking a (data) look to sync supply with demand in the ride-hailing business.  </b>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
@@ -42,7 +42,7 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Data Analysis Process -->
 
-<div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data Analysis Process</h2></summary></ul></div>
+<div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data analysis process</h2></summary></ul></div>
 
 The step-by-step process of data analysis, from the *business question* to the *synthesis of the study* is presented **[here](data-analysis.md)**.  
 The `sql` code run in the study is available [here](when-riders-meet-drivers.sql).  
