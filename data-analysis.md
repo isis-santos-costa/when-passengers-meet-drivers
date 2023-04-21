@@ -1,6 +1,6 @@
 <head><base target="_blank"></head>  
 
-# 🚖 when-riders-meet-drivers  • Data Analysis Process
+# 🚖 when-riders-meet-drivers  • Data analysis process
 <b>Seasonality of supply vs seasonality of demand in ride-hailing.  </b>
 
 This repository details the steps of the process of a quick data analysis with the aim of understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The full `sql` code is available [here](when-riders-meet-drivers.sql).  
@@ -14,18 +14,18 @@ ___
 
 ## Contents  
 
-[Step 1 • Business Question](data-analysis.md#step-1--business-question)  
-[Step 2 • Data Collection](data-analysis.md#step-2--data-collection)  
-[Step 3 • Data Cleaning](data-analysis.md#step-3--data-cleaning)  
+[Step 1 • Business question](data-analysis.md#step-1--business-question)  
+[Step 2 • Data collection](data-analysis.md#step-2--data-collection)  
+[Step 3 • Data cleaning](data-analysis.md#step-3--data-cleaning)  
 [Step 4 • Analysis](data-analysis.md#step-4--analysis)  
 [Step 5 • Synthesis](data-analysis.md#step-5--synthesis)  
 
 ___
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Query Structure -->
+<!-- Query structure -->
 
-## Query Structure  
+## Query structure  
 
 [CTE &nbsp;&nbsp;1 • Data collection: fetching data from the original table](data-analysis.md#cte-1--data-collection-fetching-data-from-the-original-table)  
 [CTE &nbsp;&nbsp;2 • Data cleaning: (a) finding interquartile ranges (IQR) of trip_seconds](data-analysis.md#cte-2--data-cleaning-a-finding-interquartile-ranges-iqr-of-trip_seconds)  
@@ -44,7 +44,7 @@ ___
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 1 -->
 
-## Step 1 • Business Question  
+## Step 1 • Business question  
 
 The search in this analysis is for a quick insight into the following question:
 
@@ -66,7 +66,7 @@ ___
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 2 -->
 
-## Step 2 • Data Collection  
+## Step 2 • Data collection  
 
 While ideal data for this analysis is actual product data from a ride-hailing app, such data is kept private by companies. The supply-demand dynamics of a city-hall regulated taxi market is therefore taken as an approximation.  
 
@@ -154,7 +154,7 @@ ___
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 3 -->
 
-## Step 3 • Data Cleaning  
+## Step 3 • Data cleaning  
 
 Data cleaning is performed in CTE-2 to CTE-9, comprising the following tasks:  
 
@@ -568,6 +568,30 @@ Showing the tables for supply and demand side-by-side enables the comparison of 
 The darker red area close to the right bottom of the demand side indicates a possible trend of passengers' behavior on weekend nights not being organically met by the supply side.  
 
 Similarly, an added availability of drivers in the early mornings of week days is found to have no correspondent proportional increase from the demand side.  
+
+From this point, it is possible to further summarize data in a single piece, converting it into a visualization that emphasizes the most critical points, when the highest imbalance between supply and demand occurs. For convenience, the trigger to sign action may be defined as entry parameters, as follows:
+
+1. Look at seasonality of Supply and seasonality of Demand  
+2. Calculate typical % ditributions  
+3. Scale % distribution of volumes to a [0,1] interval  
+4. Calculate the difference between the scaled Supply and Demand distributions  
+5. Highlight action items  
+
+### 1. Look at seasonality of Supply and seasonality of Demand  
+![when-riders-meet-drivers---1](https://user-images.githubusercontent.com/58894233/233520599-1bd332d9-3047-454d-91e6-16f105737f31.png)
+
+### 2. Calculate typical % ditributions  
+![when-riders-meet-drivers---2](https://user-images.githubusercontent.com/58894233/233520615-ab850161-1cbd-43ed-972a-26c6911b3f8e.png)
+![when-riders-meet-drivers---2a](https://user-images.githubusercontent.com/58894233/233520647-4c6efdc1-584e-44ca-b796-110c5cee92fd.png)
+
+### 3. Scale % distribution of volumes to a [0,1] interval  
+![when-riders-meet-drivers---3](https://user-images.githubusercontent.com/58894233/233520659-3fa465fd-bc46-4ee4-9102-dd7fae62a438.png)
+
+### 4. Calculate the difference between the scaled Supply and Demand distributions  
+![when-riders-meet-drivers---4](https://user-images.githubusercontent.com/58894233/233520678-e39c8b48-9f36-4804-b930-ac2c94192193.png)
+
+### 5. Highlight action items  
+![when-riders-meet-drivers---5](https://user-images.githubusercontent.com/58894233/233520691-07d617bb-1d0f-4338-8482-e422c272afb5.png)
 
 <br>
 
