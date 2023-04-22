@@ -59,8 +59,8 @@ Assessing the level of supply-demand synchronicity: a dataviz prototype
 
 <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data analysis process</h2></summary></ul></div>
 
-The step-by-step process of the data analysis, from *business question* to *synthesis of the study* is available **[here](data-analysis.md)**.  
-The `sql` code run in the study is available [here](when-riders-meet-drivers.sql).  
+The step-by-step process of the data analysis is available **[here](data-analysis.md)**.  
+The `sql` code ran in the study is available [here](when-riders-meet-drivers.sql).  
 
 <br>
 
