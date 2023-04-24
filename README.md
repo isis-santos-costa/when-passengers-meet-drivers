@@ -40,13 +40,17 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 #
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- Assessing the level of supply-demand synchronicity: a dataviz prototype -->
+<!-- 🔧 Operational tool: supply-demand synchronicity -->
 
 <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">
-Assessing the level of supply-demand synchronicity: a dataviz prototype
+🔧 Operational tool: supply-demand synchronicity
 </h2></summary></ul></div>
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)
+
+![2023-04-23 (1)](https://user-images.githubusercontent.com/58894233/233873907-c788638f-1a8d-4c24-9a78-baebad0bc9e3.png)
+
+![2023-04-23](https://user-images.githubusercontent.com/58894233/233873912-844d8692-f9fd-46d9-8f96-fde3e43b7a2b.png)
 
 <br>
 
