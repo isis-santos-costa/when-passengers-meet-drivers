@@ -29,7 +29,7 @@ ___
 
 [Spreadsheet • Google Sheets](https://docs.google.com/spreadsheets/d/1zF7snnrG6SCekaau-boSVrrdu9S6wVJJQWqjxQ8Con0/edit#gid=1281731665)  
 [SQL Code • (on BigQuery)](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742)  
-[SQL Code • (Github file)](when-drivers-meet-riders.sql)  
+[SQL Code • (Github file)](when-riders-meet-drivers.sql)  
 
 ___
 
