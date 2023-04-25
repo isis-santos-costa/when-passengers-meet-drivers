@@ -46,11 +46,11 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 🔧 Operational tool: supply-demand synchronicity
 </h2></summary></ul></div>
 
-![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
 
-![2023-04-23 (1)](https://user-images.githubusercontent.com/58894233/233873907-c788638f-1a8d-4c24-9a78-baebad0bc9e3.png)
+![2023-04-24 (1)](https://user-images.githubusercontent.com/58894233/234158971-32d43feb-209a-4450-be70-ed1bbd5f35ef.png)   
 
-![2023-04-23](https://user-images.githubusercontent.com/58894233/233873912-844d8692-f9fd-46d9-8f96-fde3e43b7a2b.png)
+![2023-04-24 (2)](https://user-images.githubusercontent.com/58894233/234158999-1a78868a-88a6-4418-a37a-1d6d37d1726e.png)  
 
 <br>
 
