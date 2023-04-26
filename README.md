@@ -9,7 +9,7 @@
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
 <div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">💹 when-riders-meet-drivers</h1></summary></ul></div>
-<b>Taking a (data) look to sync supply with demand in the ride-hailing business.  </b>
+To find some <b>predictability in operational data</b>, this repository makes use of <b>seasonal patterns</b>, applying them to <b>sync supply with demand</b> in the ride-hailing business.  
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
