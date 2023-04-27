@@ -68,7 +68,9 @@ The duty of a markteplace is to make supply meet demand and vice versa. In some 
 
 This is where seasonality plays a role in the ride-hailing business. In order to make customers happy, it is not enough, in this case, to acquire a sufficient global number of drivers to meet passangers' requests, and to acquire a sufficient number of passangers to guarantee the drivers' income: one side's availability has to take place at the same time as the need for the other side (± no more than a few minutes).
 
-Becoming data-informed about each side's natural preferences equips the business to intentionally, thoughtfully, introduce incentives and create advantages so that one side is attracted to the organic schedule of the other side.
+Becoming data-informed about each side's natural preferences equips the business to intentionally, thoughtfully, introduce incentives and create advantages so that one side is attracted to the organic schedule of the other side.  
+
+<br>
 
 [🡅](data-analysis.md#contents)
 
@@ -157,6 +159,8 @@ SELECT COUNT(*) AS record_cnt FROM raw_data
 <br>
 
 The other CTEs are gradually introduced below, in their respective step, and the full `sql` code is available [here](when-riders-meet-drivers.sql).  
+
+<br>
 
 [🡅](data-analysis.md#contents)
 
