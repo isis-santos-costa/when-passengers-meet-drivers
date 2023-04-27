@@ -1,6 +1,6 @@
 <head><base target="_blank"></head>  
 
-# 💹 when-riders-meet-drivers  • Data analysis process
+# 💹 when-riders-meet-drivers  • data analysis process
 <b>Seasonality of supply vs seasonality of demand in ride-hailing.  </b>
 
 This repository details the steps of the process of a quick data analysis with the aim of understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The full `sql` code is available [here](when-riders-meet-drivers.sql).  
@@ -70,7 +70,7 @@ This is where seasonality plays a role in the ride-hailing business. In order to
 
 Becoming data-informed about each side's natural preferences equips the business to intentionally, thoughtfully, introduce incentives and create advantages so that one side is attracted to the organic schedule of the other side.
 
-[↑](data-analysis.md#contents)
+[🡅](data-analysis.md#contents)
 
 ___
 
@@ -158,7 +158,7 @@ SELECT COUNT(*) AS record_cnt FROM raw_data
 
 The other CTEs are gradually introduced below, in their respective step, and the full `sql` code is available [here](when-riders-meet-drivers.sql).  
 
-[↑](data-analysis.md#contents)
+[🡅](data-analysis.md#contents)
 
 ___
 
@@ -445,7 +445,7 @@ SELECT * FROM data_cleaning_results
 
 <br>
 
-[↑](data-analysis.md#contents)
+[🡅](data-analysis.md#contents)
 
 ___
 
@@ -606,7 +606,7 @@ From this point, it is possible to further summarize data in a single piece, con
 
 <br>
 
-[↑](data-analysis.md#contents)
+[🡅](data-analysis.md#contents)
 
 ___
 
@@ -629,7 +629,7 @@ The figure below illustrates the application of seasonality studies to the ride-
 
 <br>
 
-[↑](data-analysis.md#contents)
+[🡅](data-analysis.md#contents)
 
 ___
 
