@@ -37,7 +37,7 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 <br>
 
-[↑](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)   
+[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)   
 
 #
 
@@ -56,7 +56,7 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 <br>
 
-[↑](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
+[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
 
 #
 
@@ -70,7 +70,7 @@ The `sql` code ran in the study is available [here](when-riders-meet-drivers.sql
 
 <br>
 
-[↑](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
+[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
 
 ___
 
