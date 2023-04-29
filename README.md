@@ -8,8 +8,9 @@
 [![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
-<div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">💹 when-riders-meet-drivers</h1></summary></ul></div>
-With the aim of finding out some <b>predictability in operational data</b>, this repository makes use of <b>seasonal patterns</b>, applying them to <b>sync supply with demand</b> in the ride-hailing business.  
+<div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h1></summary></ul></div>
+
+This repo makes use of **seasonal patterns** to find out **predictability** from operational data, as a lever to **GROW REVENUE** in the ride-hailing business.  
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
@@ -39,13 +40,13 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 [🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)   
 
-#
+___
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- 🔧 Operational tool: supply-demand synchronicity -->
+<!-- 🔧 Operational tool • Supply-demand synchronicity -->
 
 <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">
-🔧 Operational tool: supply-demand synchronicity
+Operational tool • Supply-demand synchronicity
 </h2></summary></ul></div>
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
@@ -58,7 +59,7 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 [🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
 
-#
+___
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Data analysis process -->
