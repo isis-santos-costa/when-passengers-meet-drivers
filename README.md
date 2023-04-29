@@ -11,7 +11,7 @@
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
 ## 📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE
-*Using **seasonal patterns** to find out **predictability** as a lever to **GROW REVENUE** in the ride-hailing business*  
+*Using **seasonal patterns** to uncover **predictability** as a lever to **GROW REVENUE** in the ride-hailing business*  
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
