@@ -8,15 +8,16 @@
 [![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
-<div id="user-content-toc"><ul><summary><h1 style="display: inline-block;">📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h1></summary></ul></div>
+<!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-This repo makes use of **seasonal patterns** to find out **predictability** from operational data, as a lever to **GROW REVENUE** in the ride-hailing business.  
+## 📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE
+*Using **seasonal patterns** to find out **predictability** as a lever to **GROW REVENUE** in the ride-hailing business*  
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
 <!-- ![ride-hailing-1](https://user-images.githubusercontent.com/58894233/232349913-2782cbc6-2e31-4219-8e97-61abd0ce4bf0.png) -->
 
-#
+<!-- # --> <br>
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -45,9 +46,7 @@ ___
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- 🔧 Operational tool • Supply-demand synchronicity -->
 
-<div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">
-Operational tool • Supply-demand synchronicity
-</h2></summary></ul></div>
+## Operational tool • Supply-demand synchronicity  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
 
@@ -64,7 +63,7 @@ ___
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Data analysis process -->
 
-<div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">Data analysis process</h2></summary></ul></div>
+## Data analysis process  
 
 The step-by-step process of the data analysis is available **[here](data-analysis.md)**.  
 The `sql` code ran in the study is available [here](when-riders-meet-drivers.sql).  
