@@ -8,9 +8,9 @@
 [![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
-<!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">📈 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
+<!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-## 📈 when-riders-meet-drivers • create predictability to GROW REVENUE
+## 💹 when-riders-meet-drivers • create predictability to GROW REVENUE
 *Using **seasonal patterns** to uncover **predictability** as a lever to **GROW REVENUE** in the ride-hailing business*  
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
