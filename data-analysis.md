@@ -1,6 +1,6 @@
 <head><base target="_blank"></head>  
 
-# 📈 when-riders-meet-drivers  • data analysis process
+# 📈 when-riders-meet-drivers  • data analysis process (⚠️ WIP)
 <b>Seasonality of supply vs seasonality of demand in ride-hailing.  </b>
 
 This repository details the steps of the process of a quick data analysis with the aim of understanding the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The full `sql` code is available [here](when-riders-meet-drivers.sql).  
