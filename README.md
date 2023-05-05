@@ -4,14 +4,26 @@
 <!-- [![files](https://img.shields.io/github/directory-file-count/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](https://github.com/isis-santos-costa/when-riders-meet-drivers/) -->
 <!-- 
 [![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](https://www.linkedin.com/in/isis-santos-costa/) -->
+
 [![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/pulls?q=is%3Apr)
 [![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-## 💹 when-riders-meet-drivers • create predictability to GROW REVENUE (⚠️ WIP)
-*Using **seasonal patterns** to uncover **predictability** as a lever to **GROW REVENUE** in the ride-hailing business*  
+## « When Riders Meet Drivers » → Predictability for REVENUE GROWTH  
+__*Seasonal patterns as a lever for REVENUE GROWTH in the ride-hailing business*__
+
+This repository presents how sharing predictability with partners can be converted into revenue in the ride-hailing business. The predictability here is derived from a quick data analysis to find out the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+
+A summary of results is presented below.  
+The full analysis, from business question, through data collection and cleaning, to analysis and synthesis is available **[here](data-analysis.md)**.  
+The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
+
+Tags: `product-analytics`, `sql`, `bigquery`.
+
+___
+
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- Illustration -->
