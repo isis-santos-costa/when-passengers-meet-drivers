@@ -11,13 +11,13 @@
 
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-## « When Riders Meet Drivers » → Predictability for REVENUE GROWTH  
+## « When Riders Meet Drivers »
 __*Seasonal patterns as a lever for REVENUE GROWTH in the ride-hailing business*__
 
-This repository presents how sharing predictability with partners can be converted into revenue in the ride-hailing business. The predictability here is derived from a quick data analysis to find out the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+This repository presents how sharing predictability with partners can convert into revenue in the ride-hailing business. The predictability here is derived from seasonal patterns at the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
 
 A summary of results is presented below.  
-The full analysis, from business question, through data collection and cleaning, to analysis and synthesis is available **[here](data-analysis.md)**.  
+The full analysis, from business question, through data collection & cleaning, to analysis & synthesis is available **[here](data-analysis.md)**.  
 The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
 
 Tags: `product-analytics`, `sql`, `bigquery`.
