@@ -20,7 +20,7 @@ A summary of results is presented below.
 The full analysis, from business question, through data collection & cleaning, to analysis & synthesis is available **[here](data-analysis.md)**.  
 The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
 
-Tags: `product-analytics`, `sql`, `bigquery`.
+Tags: `product-analytics`, `sql`, `bigquery`.  
 
 ___
 
@@ -47,8 +47,6 @@ Specifically, the search is for insights on the following questions:
 
 Given that ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available from Google BigQuery public datasets.
 
-Tags: `product-analytics`, `sql`, `bigquery`.  
-
 <br>
 
 [🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)   
@@ -58,13 +56,11 @@ ___
 <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- 🔧 Operational tool • Supply-demand synchronicity -->
 
-## Operational tool • Supply-demand synchronicity  
+## Operational Tool: Supply-Demand Synchronicity  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
 
-![2023-04-24 (1)](https://user-images.githubusercontent.com/58894233/234158971-32d43feb-209a-4450-be70-ed1bbd5f35ef.png)   
-
-![2023-04-24 (2)](https://user-images.githubusercontent.com/58894233/234158999-1a78868a-88a6-4418-a37a-1d6d37d1726e.png)  
+![when-riders-meet-drivers---1---action-board](https://user-images.githubusercontent.com/58894233/236591329-fd1218ee-7910-4739-b5de-be6de130151c.png)
 
 <br>
 
