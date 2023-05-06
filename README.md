@@ -53,10 +53,10 @@ Given that ride-hailing is a business run by private companies that keep such da
 
 ___
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- 🔧 Operational tool • Supply-demand synchronicity -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Operational tool ⇒ Supply-demand synchronicity -->
 
-## Operational Tool: Supply-Demand Synchronicity  
+## Operational Tool &nbsp; ⇒ &nbsp; Supply-Demand Synchronicity  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
 
