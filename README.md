@@ -72,13 +72,13 @@ ___
 
 ___
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- Data analysis process -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Data Analysis -->
 
-## Data analysis process  
+## Data Analysis  
 
-The step-by-step process of the data analysis is available **[here](data-analysis.md)**.  
-The `sql` code ran in the study is available [here](when-riders-meet-drivers.sql).  
+The full data analysis process, from business question, through data collection & cleaning, to analysis & synthesis is available **[here](data-analysis.md)**.  
+The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
 
 <br>
 
