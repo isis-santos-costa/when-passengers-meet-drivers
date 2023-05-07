@@ -11,7 +11,7 @@
 
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-# When Riders Meet Drivers
+# When Riders Meet Drivers (⚠️ WIP)
 __*Seasonal patterns as a lever to GROW REVENUE in the ride-hailing business*__
 
 This repository presents how sharing predictability with partners can convert into revenue in the ride-hailing business. The predictability here is derived from seasonal patterns at the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
