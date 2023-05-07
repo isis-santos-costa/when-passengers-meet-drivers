@@ -17,7 +17,7 @@ __*Seasonal patterns as a lever to GROW REVENUE in the ride-hailing business*__
 This repository presents how sharing predictability with partners can convert into revenue in the ride-hailing business. The predictability here is derived from seasonal patterns at the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
 
 A summary of results is presented below.  
-The full analysis, from business question, through data collection & cleaning, to analysis & synthesis is available **[here](data-analysis.md)**.  
+The full analysis (business question, data collection & cleaning, analysis & synthesis) is available **[here](data-analysis.md)**.  
 The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
 
 Tags: `product-analytics`, `sql`, `bigquery`.  
