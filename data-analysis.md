@@ -129,7 +129,8 @@ Data is retrived from BigQuery public data in the first Common Table Expression 
 
 <br>
 
-### CTE 1 • Data collection: fetching data from the original table
+<details>
+<summary>CTE 1 • Data collection: fetching data from the original table</summary>
 
 ```sql
 -------------------------------------------------------------------------------------------------------------------------------
@@ -145,6 +146,7 @@ WITH raw_data AS (
   WHERE trip_seconds > 0
 )
 ```  
+</details>
 
 <br>
 
