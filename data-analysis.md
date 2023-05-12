@@ -118,7 +118,7 @@ Clicking on « view dataset » opens it on BigQuery, where it is possible to see
 
 <details>
   <summary>
-    Inspecting the <code>taxi_trips</code> table schema of « Chicago Taxi Trips » reveals that the fields needed for a quick study are available in it:<br>
+    Inspecting the <code>taxi_trips</code> table schema of « Chicago Taxi Trips » reveals that the fields needed for a quick study are available in it:<br><br>
     <ul>
       <li>unique_key</li>
       <li>taxi_id</li>
@@ -141,7 +141,7 @@ Data is retrived from BigQuery public data in the first Common Table Expression 
 <br>
 
 <details>
-<summary>CTE 1 • Data collection: fetching data from the original table</summary>
+  <summary><h3>CTE 1 • Data collection: fetching data from the original table</h3></summary>
 
 ```sql
 -------------------------------------------------------------------------------------------------------------------------------
