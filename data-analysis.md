@@ -118,7 +118,7 @@ Clicking on « view dataset » opens it on BigQuery, where it is possible to see
 
 <details>
   <summary>
-    Inspecting the <code>taxi_trips</code> table schema reveals that the fields needed for a quick study are available in it:<br>
+    Inspecting the <code>taxi_trips</code> table schema of « Chicago Taxi Trips » reveals that the fields needed for a quick study are available in it:<br>
     <ul>
       <li>unique_key</li>
       <li>taxi_id</li>
