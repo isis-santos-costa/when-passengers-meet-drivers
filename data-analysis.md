@@ -97,28 +97,39 @@ Clicking on « view dataset » opens it on BigQuery, where it is possible to see
 
 <br>
 
-The dataset « NYC TLC Trips » has <b>separate tables</b> for each year and line of business:  
-
-![when-riders-meet-drivers---dataset-1-highlighted](https://user-images.githubusercontent.com/58894233/232633376-1507a50a-b41a-4a03-8d81-d940fb843b74.png)
-
+<details>
+  <summary>
+    The dataset « NYC TLC Trips » has <b>separate tables</b> for each year and line of business
+  </summary>
+  ![when-riders-meet-drivers---dataset-1-highlighted](https://user-images.githubusercontent.com/58894233/232633376-1507a50a-b41a-4a03-8d81-d940fb843b74.png)
+</details>
+  
 <br>
 
-The dataset « Chicago Taxi Trips », in turn, has the whole data collected in a <b>single table</b>:  
-
-![when-riders-meet-drivers---dataset-2-highlighted](https://user-images.githubusercontent.com/58894233/232633677-31d77026-da42-4e55-9505-c089d8742504.png)
-
+<details>
+  <summary>
+    The dataset « Chicago Taxi Trips », in turn, has the whole data collected in a <b>single table</b>
+  </summary>
+  ![when-riders-meet-drivers---dataset-2-highlighted](https://user-images.githubusercontent.com/58894233/232633677-31d77026-da42-4e55-9505-c089d8742504.png)
+</details>
+  
 <br>
 
-Inspecting the `taxi_trips` table schema reveals that the fields needed for a quick study are available in it:
-* unique_key
-* taxi_id
-* trip_start_timestamp
-* trip_seconds (duration)
 
-<br>
-
-![when-riders-meet-drivers---dataset-3-highlighted](https://user-images.githubusercontent.com/58894233/232634944-c0462a65-fb5e-4dde-b2bd-1cc5a40c8f56.png)
-
+<details>
+  <summary>
+    Inspecting the <code>taxi_trips</code> table schema reveals that the fields needed for a quick study are available in it:<br>
+    <ul>
+      <li>unique_key</li>
+      <li>taxi_id</li>
+      <li>trip_start_timestamp</li>
+      <li>trip_seconds (duration)</li>
+  </summary>
+  <br>
+  <img src="https://user-images.githubusercontent.com/58894233/232634944-c0462a65-fb5e-4dde-b2bd-1cc5a40c8f56.png">
+</details>
+  
+  
 <br>
 
 Considering agility, only the <b>[« Chicago Taxi Trips »](https://console.cloud.google.com/marketplace/product/city-of-chicago-public-data/chicago-taxi-trips/) dataset has been chosen for the study</b>. In this way, all necessary that can be retrived fetching just `` FROM `bigquery-public-data.chicago_taxi_trips.taxi_trips` ``. Data from the « NYC TLC Trips » dataset may be added for validation and further elaboration in the future.  
@@ -146,7 +157,6 @@ WITH raw_data AS (
   WHERE trip_seconds > 0
 )
 ```  
-</details>
 
 <br>
 
@@ -155,6 +165,8 @@ Calling CTE 1:
 SELECT COUNT(*) AS record_cnt FROM raw_data
 ```  
 ![when-riders-meet-drivers---sql---cte-1---query-results](https://user-images.githubusercontent.com/58894233/232664865-1c57e472-21c0-4cae-9e42-a8f8aafb59c5.png)
+  
+</details>
 
 <br>
 
