@@ -55,20 +55,18 @@ ___
 
 ## Step 1 • Business question  
 
-The search in this analysis is for a quick insight into the following question:
+The search in this analysis is for a quick insight into the following questions:
 
 > <i> « Are there any significant differences between favorite drivers' schedules and passengers' needs? » </i>  
->> <i> « If so, when do the most critical imbalances occur? » </i>  
+> <i> « If so, when do the most critical imbalances occur? » </i>  
 
-Why would the company care about this issue?  
+Why would the company care about that?  
 
-The duty of a markteplace is to make supply meet demand and vice versa. In some cases, « when » it happens may be secondary. Take, for example, the purchase of a totally specific item found only abroad. In the absence of another option, the customer may be willing to wait a long time (I myself have once waited months). In some cases, on the other hand, timimg may be non-negotiable. Imagine waiting for a car to go to work, for instance. Five minutes most probably make a difference, and anything over fifteen minutes has a high chance of entering the deal-breaker zone.  
+The duty of a markteplace is to make supply meet demand and vice versa. In some cases, « when » it happens may be secondary. Take, for example, the purchase of a totally specific item found only abroad. In the absence of another option, the customer (eventually you 🙋) may be willing to wait a long time (even a few months). In some cases, on the other hand, timimg may be non-negotiable. Imagine waiting for a car to go to work, for instance. Five minutes probably make a difference, and anything over fifteen minutes has a high chance of entering the deal-breaker zone.  
 
 This is where seasonality plays a role in the ride-hailing business. In order to make customers happy, it is not enough, in this case, to acquire a sufficient global number of drivers to meet passangers' requests, and to acquire a sufficient number of passangers to guarantee the drivers' income: one side's availability has to take place at the same time as the need for the other side (± no more than a few minutes).
 
 Becoming data-informed about each side's natural preferences equips the business to intentionally, thoughtfully, introduce incentives and create advantages so that one side is attracted to the organic schedule of the other side.  
-
-<br>
 
 [↑](data-analysis.md#contents)
 
@@ -172,8 +170,6 @@ SELECT COUNT(*) AS record_cnt FROM raw_data
 <br>
 
 The other CTEs are gradually introduced below, in their respective step, and the full `sql` code is available [here](when-riders-meet-drivers.sql).  
-
-<br>
 
 [↑](data-analysis.md#contents)
 
@@ -460,8 +456,6 @@ SELECT * FROM data_cleaning_results
 ```  
 ![when-riders-meet-drivers---sql---cte-9---query-results](https://user-images.githubusercontent.com/58894233/232667001-6a29f4d0-f363-4b6f-beb8-be1450ecd718.png)
 
-<br>
-
 [↑](data-analysis.md#contents)
 
 ___
@@ -621,8 +615,6 @@ From this point, it is possible to further summarize data in a single piece, con
 ### 5. Highlight action items  
 ![when-riders-meet-drivers---5](https://user-images.githubusercontent.com/58894233/233520691-07d617bb-1d0f-4338-8482-e422c272afb5.png)
 
-<br>
-
 [↑](data-analysis.md#contents)
 
 ___
@@ -643,8 +635,6 @@ This **stability** in end-user seasonal patterns comes in handy for **Strategy**
 The figure below illustrates the application of seasonality studies to the ride-hailing business (approximate here by the Chicago Taxi market, for which public data is available). On the left, we see the typical weekly schedule of drivers (supply), on the right, the same for passengers (demand). In each image, the numbers on the vertical axis are the hours of the day, with the days of week in the columns. Color coding represents relative intensity, with green for low, white for medium, and red for high. So, the image on the left side, for instance, shows that the peak supply time, when there is the highest number of drivers on the streets, is from 1:00 pm to 2:00 pm on Fridays.  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
-
-<br>
 
 [↑](data-analysis.md#contents)
 
