@@ -11,10 +11,10 @@
 
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
 
-# When Riders Meet Drivers (⚠️ WIP)
+# When Riders Meet Drivers
 __*Seasonal patterns as a lever to GROW REVENUE in the ride-hailing business*__
 
-This repository presents how sharing predictability with partners can convert into revenue in the ride-hailing business. The predictability here is derived from seasonal patterns at the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
+This repository presents how **sharing predictability with partners** can convert into revenue in the ride-hailing business. Predictability here is derived from seasonal patterns at the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace.  
 
 A summary of results is presented below.  
 The full analysis (business question, data collection & cleaning, analysis & synthesis) is available **[here](data-analysis.md)**.  
@@ -24,17 +24,8 @@ Tags: `product-analytics`, `sql`, `bigquery`.
 
 ___
 
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-<!-- Illustration -->
-<!-- ![ride-hailing-1](https://user-images.githubusercontent.com/58894233/232349913-2782cbc6-2e31-4219-8e97-61abd0ce4bf0.png) -->
-
-<!-- # --> <br>
-
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Intro -->
-
 **What is the mission of a marketplace?**  
 A marketplace dedicates to making supply meet demand. This mission usually comes with some added requirements, of lesser or greater importance depending on the market that it serves, which may require or value safety, timeliness, accuracy, quality.  
 
@@ -45,11 +36,9 @@ Specifically, the search is for insights on the following questions:
 > <i> « Are there any significant differences between preferred drivers' schedules and passengers' needs? » </i>  
 > <i> « If so, when do the most critical disparities occur? » </i> 
 
-Given that ride-hailing is a business run by private companies that keep such data confidential, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available from Google BigQuery public datasets.
+Given that ride-hailing data is kept confidential by businesses, the supply-demand dynamics of a city-hall regulated taxi market is taken as an approximation, for which data is available from Google BigQuery public datasets.
 
-<br>
-
-[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)   
+[↑](#when-riders-meet-drivers)   
 
 ___
 
@@ -58,13 +47,15 @@ ___
 
 ## Operational Tool &nbsp; ⇒ &nbsp; Supply-Demand Synchronicity  
 
-![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/233257402-67e3db21-83f5-40d6-a321-d48f458e3132.png)  
+Seasonality studies applied to the ride-hailing business are illustrated in the figure below (approximate here by the Chicago Taxi market, for which public data is available). On the left, we see the typical **weekly schedule of drivers (supply)**. On the right, the same is presented for **passengers (demand)**. In each image, the numbers on the vertical axis are the hours of the day, with the days of week in the columns. Color coding represents relative intensity, with green for low, white for medium, and red for high. So, the image on the left side, for instance, shows that the peak supply time, when there is the highest number of drivers on the streets, is from 1:00 pm to 2:00 pm on Fridays.  
 
-![when-riders-meet-drivers---1---action-board](https://user-images.githubusercontent.com/58894233/236591329-fd1218ee-7910-4739-b5de-be6de130151c.png)
+![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
+  
+Combining both sides — supply and demand — into a single net surplus figure, and attaching to it a table summarizing estimated results of **planned operations scenarios**, provides a practical **Action Board**, such as the one below:
 
-<br>
+![when-riders-meet-drivers---1---action-board](https://github.com/isis-santos-costa/when-riders-meet-drivers/assets/58894233/fd77eef6-3c3d-4815-96fe-f3906e831380)  
 
-[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
+[↑](#when-riders-meet-drivers)   
 
 ___
 
@@ -76,9 +67,7 @@ ___
 The full data analysis (business question, data collection & cleaning, analysis & synthesis) is available **[here](data-analysis.md)**.  
 The SQL code ran in the study is available [here](when-riders-meet-drivers.sql), and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).  
 
-<br>
-
-[🡅](https://github.com/isis-santos-costa/when-riders-meet-drivers#-when-riders-meet-drivers)  
+[↑](#when-riders-meet-drivers)   
 
 ___
 
