@@ -635,6 +635,10 @@ This **stability** in end-user seasonal patterns comes in handy for **Strategy**
 The figure below illustrates the application of seasonality studies to the ride-hailing business (approximate here by the Chicago Taxi market, for which public data is available). On the left, we see the typical weekly schedule of drivers (supply), on the right, the same for passengers (demand). In each image, the numbers on the vertical axis are the hours of the day, with the days of week in the columns. Color coding represents relative intensity, with green for low, white for medium, and red for high. So, the image on the left side, for instance, shows that the peak supply time, when there is the highest number of drivers on the streets, is from 1:00 pm to 2:00 pm on Fridays.  
 
 ![when-riders-meet-drivers---sql---cte-11---to-G-Sheets---6-Supply-Demand-5](https://user-images.githubusercontent.com/58894233/232947737-88196b46-292c-4045-ae83-a6ed45d6457e.png)  
+  
+Combining both sides — supply and demand — into a single net surplus figure, and attaching to it a table summarizing estimated results of **planned operations scenarios**, provides a practical **Action Board**, such as the one below:
+
+![when-riders-meet-drivers---1---action-board](https://github.com/isis-santos-costa/when-riders-meet-drivers/assets/58894233/fd77eef6-3c3d-4815-96fe-f3906e831380)
 
 [↑](data-analysis.md#contents)
 
