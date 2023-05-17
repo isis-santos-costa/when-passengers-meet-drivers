@@ -101,7 +101,7 @@ Clicking on « view dataset » opens it on BigQuery, where it is possible to see
   <summary>
     The dataset « NYC TLC Trips » has <b>separate tables</b> for each year and line of business
   </summary>
-  ![when-riders-meet-drivers---dataset-1-highlighted](https://user-images.githubusercontent.com/58894233/232633376-1507a50a-b41a-4a03-8d81-d940fb843b74.png)
+  <img src="https://user-images.githubusercontent.com/58894233/232633376-1507a50a-b41a-4a03-8d81-d940fb843b74.png">
 </details>
   
 <br>
@@ -110,7 +110,7 @@ Clicking on « view dataset » opens it on BigQuery, where it is possible to see
   <summary>
     The dataset « Chicago Taxi Trips », in turn, has the whole data collected in a <b>single table</b>
   </summary>
-  ![when-riders-meet-drivers---dataset-2-highlighted](https://user-images.githubusercontent.com/58894233/232633677-31d77026-da42-4e55-9505-c089d8742504.png)
+  <img src="https://user-images.githubusercontent.com/58894233/232633677-31d77026-da42-4e55-9505-c089d8742504.png">
 </details>
   
 <br>
