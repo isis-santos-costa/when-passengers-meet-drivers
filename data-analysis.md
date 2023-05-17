@@ -70,7 +70,8 @@ Becoming data-informed about each side's natural preferences equips the business
 
 <br>
 
-[🡹](data-analysis.md#contents)
+[🢁](data-analysis.md#contents)  
+[↑](data-analysis.md#contents)  
 
 ___
 
