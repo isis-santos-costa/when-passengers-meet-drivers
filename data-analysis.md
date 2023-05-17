@@ -70,9 +70,11 @@ Becoming data-informed about each side's natural preferences equips the business
 
 <br>
 
-[🡅](data-analysis.md#contents)
+[<img src="https://github.com/isis-santos-costa/when-riders-meet-drivers/assets/58894233/69cae7b2-57a9-4030-9714-989c60560ac5" 
+      alt="back-to-top" height="26"/>](data-analysis.md#contents)
 
 ___
+
 
 <!---------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Step 2 -->
