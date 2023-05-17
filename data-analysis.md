@@ -1,7 +1,7 @@
 # When Riders Meet Drivers → Data analysis process (⚠️ WIP)  
 __*Seasonal patterns as a lever to GROW REVENUE in the ride-hailing business*__
 
-This repository details the steps of a quick data analysis on finding out the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The SQL code used in it is available [here](when-riders-meet-drivers.sql) and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).   
+This repository details the steps of a quick data analysis on the matching and contrasting points in the daily and weekly seasonality of the different sides of a ride-hailing marketplace. The SQL code used in it is available [here](when-riders-meet-drivers.sql) and on [BigQuery](https://console.cloud.google.com/bigquery?sq=547152705700:2c2438efe4534dfab31839bfa6bdb742).   
 
 Tags: `product-analytics`, `sql`, `bigquery`.
 
