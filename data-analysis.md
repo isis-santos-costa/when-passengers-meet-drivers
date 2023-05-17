@@ -70,8 +70,7 @@ Becoming data-informed about each side's natural preferences equips the business
 
 <br>
 
-[<img src="https://github.com/isis-santos-costa/when-riders-meet-drivers/assets/58894233/69cae7b2-57a9-4030-9714-989c60560ac5" 
-      alt="back-to-top" height="26"/>](data-analysis.md#contents)
+<a href="data-analysis.md#contents"><img src="https://cdn-icons-png.flaticon.com/512/5610/5610930.png" alt="back-to-top" height="26"/></a>
 
 ___
 
@@ -176,7 +175,7 @@ The other CTEs are gradually introduced below, in their respective step, and the
 
 <br>
 
-[🡅](data-analysis.md#contents)
+<a href="data-analysis.md#contents"><img src="https://cdn-icons-png.flaticon.com/512/5610/5610930.png" alt="back-to-top" height="26"/></a>
 
 ___
 
@@ -463,7 +462,7 @@ SELECT * FROM data_cleaning_results
 
 <br>
 
-[🡅](data-analysis.md#contents)
+<a href="data-analysis.md#contents"><img src="https://cdn-icons-png.flaticon.com/512/5610/5610930.png" alt="back-to-top" height="26"/></a>
 
 ___
 
@@ -624,7 +623,7 @@ From this point, it is possible to further summarize data in a single piece, con
 
 <br>
 
-[🡅](data-analysis.md#contents)
+<a href="data-analysis.md#contents"><img src="https://cdn-icons-png.flaticon.com/512/5610/5610930.png" alt="back-to-top" height="26"/></a>
 
 ___
 
@@ -647,7 +646,7 @@ The figure below illustrates the application of seasonality studies to the ride-
 
 <br>
 
-[🡅](data-analysis.md#contents)
+<a href="data-analysis.md#contents"><img src="https://cdn-icons-png.flaticon.com/512/5610/5610930.png" alt="back-to-top" height="26"/></a>
 
 ___
 
