@@ -6,7 +6,7 @@
 [![contributors](https://img.shields.io/github/contributors/isis-santos-costa/when-riders-meet-drivers?color=lightgrey)](https://www.linkedin.com/in/isis-santos-costa/) -->
 
 [![pull requests](https://img.shields.io/github/issues-pr-closed/isis-santos-costa/when-riders-meet-drivers?color=brightgreen)](https://github.com/isis-santos-costa/when-riders-meet-drivers/pulls?q=is%3Apr)
-[![commit activity](https://img.shields.io/github/commit-activity/m/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
+[![commit activity](https://img.shields.io/github/commit-activity/y/isis-santos-costa/when-riders-meet-drivers)](https://github.com/isis-santos-costa/when-riders-meet-drivers/)
 [![Product Data | B2B SaaS | PLG](https://img.shields.io/badge/product%20data%20%7C%20b2b%20saas%20%7C%20plg-%E2%98%95-purple)](https://www.linkedin.com/in/isis-santos-costa/)   
 
 <!-- <div id="user-content-toc"><ul><summary><h2 style="display: inline-block;">💹 when-riders-meet-drivers • Creating predictability to GROW REVENUE</h2></summary></ul></div> -->
